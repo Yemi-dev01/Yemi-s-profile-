@@ -9,11 +9,12 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 20px blue;
-   max-width: 5000px;
+   max-width: 100%;
    box-sizing: border-box;
-    width: 800px;
+    width: 100%;
     margin-bottom: 50px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 * {
@@ -86,13 +87,18 @@ nav a{
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: var(--transition);
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    display: block;
+    
 }
 nav ul{
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
    justify-content: center;
-   
+   flex-wrap: wrap;
 }
 
 nav a:hover {
@@ -163,4 +169,7 @@ footer {
     border-radius: 100px;
     text-align: center;
     box-sizing: cover;
+}
+div {
+    padding-bottom: 20px;
 }
